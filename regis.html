@@ -1,0 +1,121 @@
+<!-- join.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Delynessence</title>
+  <meta name="description" content="Join Delynessence community." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="images/Icon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="CSS/home.css" />
+</head>
+<body>
+  <!-- Reuse single NAV markup -->
+  <nav class="nav" role="navigation" aria-label="Primary">
+    <div class="nav__inner">
+      <a class="nav__brand" href="regis.html" aria-label="Delynessence Home">
+              <img src="images/Icon.png" alt="delynessence logo" class="nav__brand-img" sizes="32px" width="32" height="32">
+        <span class="nav__brand-text">Delynessence</span>
+      </a>
+      <ul class="nav__list">
+        <!-- <li class="nav__item">
+          <a class="nav__link" href="index.html#home">
+            <i class="fa-solid fa-house nav__icon" aria-hidden="true"></i>
+            <span class="nav__label">Home</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#delynn">
+            <i class="fa-solid fa-star nav__icon" aria-hidden="true"></i>
+            <span class="nav__label">Delynn</span>
+          </a>
+        </li> -->
+        <li class="nav__item nav__item--join">
+          <a class="nav__link nav__link--join" href="index.html" aria-current="page" aria-label="Home">
+            <i class="fa-solid fa-house nav__icon" aria-hidden="true"></i>
+            <span class="nav__label">Home</span>
+          </a>
+        </li>
+        <!-- <li class="nav__item">
+          <a class="nav__link" href="index.html#links">
+            <i class="fa-solid fa-link nav__icon" aria-hidden="true"></i>
+            <span class="nav__label">Links</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="index.html#project">
+            <i class="fa-solid fa-diagram-project nav__icon" aria-hidden="true"></i>
+            <span class="nav__label">Project</span>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <main class="section s-delynn">
+    <div class="container">
+      <header class="section__head reveal-fade">
+        <h1>Join Delynessence</h1>
+        <p class="section__desc">Bergabunglah dan jadi bagian dari komunitas yang suportif dan kreatif.</p>
+      </header>
+
+      <div class="grid grid--3">
+        <article class="card card--form reveal-up">
+  <h2 class="card__title">Ayo Gabung</h2>
+  <p class="card__text">
+    Kami menyambut semua penggemar yang ingin berbagi antusiasme dan berkolaborasi.
+    Silahkan isi form di bawah ini.
+  </p>
+  <img class="form-banner" src="images/REGIST.jpg" alt="Pendaftaran Anggota Delynessence">
+  <div class="form-embed">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe2n9TtpSynamxr_tfepaBgDsAG3_wnvIcd0iFQzRqD5KyHBg/viewform?embedded=true
+      frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
+    </iframe>
+  </div>
+</article>
+
+        <p class="reveal-fade" style="grid-column:1/-1"><a class="btn btn--ghost" href="index.html#home"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Kembali ke Home</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__left">© <span id="year"></span> Delynessence</p>
+      <ul class="footer__links" aria-label="Kontak">
+        <li><a href="mailto:delynessence@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span class="sr-only">Email</span></a></li>
+        <li><a href="https://www.instagram.com/delynessence.id" aria-label="Instagram @delynessence.id"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://x.com/Delynessence" aria-label="X / Twitter @Delynessence"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.tiktok.com/@delynessence" aria-label="Tiktok @Delynessence"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Back To Top -->
+  <button class="to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="JS/home.js" defer></script>
+  <script>
+    // Prevent form submit (demo-only)
+    document.getElementById('join-form')?.addEventListener('submit', (e)=> {
+      e.preventDefault();
+      alert('Terima kasih! Ini hanya demo, data tidak dikirim.');
+    });
+  </script>
+</body>
+</html>
