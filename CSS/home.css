@@ -1,10 +1,10 @@
 /* styles.css */
 :root{
-  --bg-0:radial-gradient(800px 400px at 20% 0%, rgba(108,99,255,.18), transparent 60%),
-    radial-gradient(800px 420px at 80% 10%, rgba(124,58,237,.16), transparent 60%),
-    linear-gradient(180deg, var(--bg-1)); --bg-1:#1a1d24; --bg-2:#252a34; --bg-3:#334155;
-  --text-hi:#f8fafc; --text-mid:#cbd5e1; --text-dim:#94a3b8;
-  --pri:#6C63FF; --pri-2:#5a52d5; --acc:#7C3AED;
+  --bg-0:radial-gradient(800px 400px at 20% 0%, #f8b48a, transparent 60%),
+    radial-gradient(800px 420px at 80% 10%,#f8b48a, transparent 60%),
+    linear-gradient(180deg, var(--bg-1)); --bg-1:#E1B5F6; --bg-2: #cbabcf; --bg-3:#E1B5F6;
+  --text-hi:#f8fafc; --text-mid:#000000; --text-dim:#000000;
+  --pri:#E6C4F3; --pri-2:#7C3AED; --acc:#7C3AED;
   --radius:16px; --radius-lg:24px;
   --shadow:0 8px 24px rgba(0,0,0,.25);
   --space-1:clamp(.5rem,.6vw,.75rem);
@@ -58,7 +58,7 @@ p{margin:0 0 var(--space-2); max-width:72ch}
   }
 }
 .s-home{background:var(--bg-0)}
-.s-delynn{background:var(--bg-1)}
+.s-delynn{background:var(--bg-0)}
 /* Add to CSS/home.css (place near the end) */
 :root{ --avatar-size: clamp(280px, 40vw, 460px); }
 
@@ -77,8 +77,8 @@ p{margin:0 0 var(--space-2); max-width:72ch}
   font-family:Poppins,Inter,sans-serif; font-weight:700;
   font-size:clamp(1.8rem,4.6vw,2.6rem); margin:0 0 .35rem; color:var(--text-hi);
 }
-.delynn-hero__title .accent{ color:var(--pri); }
-.delynn-hero__role{ color:var(--pri); font-weight:600; margin:0 0 .75rem; }
+.delynn-hero__title .accent{ color:var(--pri-2); }
+.delynn-hero__role{ color:var(--pri-2); font-weight:600; margin:0 0 .75rem; }
 .delynn-hero__desc{ color:var(--text-mid); max-width:60ch; }
 
 .delynn-hero__photo{ margin:0; justify-self:center; }
@@ -187,7 +187,7 @@ p{margin:0 0 var(--space-2); max-width:72ch}
 .nav__icon{display:none}
 .nav__label{display:inline}
 .nav__link.is-active,
-.nav__link[aria-current="page"]{color:var(--pri)}
+.nav__link[aria-current="page"]{color:var(--pri-2)}
 .nav__link.is-active::after,
 .nav__link[aria-current="page"]::after{
   content:""; position:absolute; left:.9rem; right:.9rem; bottom:.3rem;
@@ -293,8 +293,8 @@ p{margin:0 0 var(--space-2); max-width:72ch}
   padding:1rem .5rem; color:var(--text-hi); text-decoration:none;
   transition:transform .18s ease, background-color .18s ease, border-color .18s ease, opacity .18s ease;
 }
-.linktile i{font-size:1.25rem; color:var(--pri)}
-.linktile:hover{color: var(--pri); transform:translateY(-2px); background:rgba(255,255,255,.06); border-color:rgba(148,163,184,.24)}
+.linktile i{font-size:1.25rem; color:#000000;}
+.linktile:hover{color: #000000; transform:translateY(-2px); background:rgba(255,255,255,.06); border-color:rgba(148,163,184,.24)}
 
 
 /* Footer */
