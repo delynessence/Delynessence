@@ -357,9 +357,44 @@ p{margin:0 0 var(--space-2); max-width:72ch}
 }
 
 
-/* Mobile tweaks */
 @media (max-width: 767.98px){
-  .card--form{ padding: clamp(1rem, 3vw, 1.25rem); }
-  .form-embed iframe{ height: max(78vh, 820px); } /* biar tidak terlalu pendek */
+
+  body {
+    padding-bottom: var(--mobile-nav-h);
+  }
+
+  .card--form{ 
+    padding: clamp(1rem, 3vw, 1.25rem); 
+  }
+
+  .form-embed iframe{ 
+    height: max(78vh, 820px); 
+  }
+
+  /* =========================
+     NAV MOBILE — DEFAULT (tidak aktif)
+     ========================= */
+  .nav__link {
+    color: rgba(255,255,255,.6);
+  }
+
+  .nav__icon {
+    color: rgba(255,255,255,.6);
+  }
+
+  /* =========================
+     NAV MOBILE — ACTIVE STATE
+     ========================= */
+  .nav__link.is-active,
+  .nav__link[aria-current="page"] {
+    color: var(--pri-2);
+  }
+
+  .nav__link.is-active .nav__icon,
+  .nav__link[aria-current="page"] .nav__icon {
+    color: var(--pri-2);
+  }
+
+
 }
 
