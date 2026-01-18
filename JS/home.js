@@ -129,3 +129,12 @@
     slides.forEach((img,idx)=> img.classList.toggle('is-active', idx===0));
   }
 })();
+
+const iframe = document.getElementById("gform");
+
+iframe.addEventListener("load", () => {
+  window.scrollTo({
+    top: 325,
+    behavior: "smooth"
+  });
+});

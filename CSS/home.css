@@ -342,7 +342,7 @@ p{margin:0 0 var(--space-2); max-width:72ch}
 .form-embed iframe{
   display:block;
   width:100%;
-  height: clamp(70vh, 1300px, 2000px);  /* cukup tinggi untuk Google Form panjang */
+  height: clamp(300vh, 1300px, 2000px);  /* cukup tinggi untuk Google Form panjang */
   border:0;
   border-radius: var(--radius);
   background: rgba(255,255,255,.03);
